@@ -2,9 +2,342 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Jacobo Vargas</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="css/progress-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <title>About Jacobo Vargas</title>
+    <style media="screen" type="text/css">
+      body{
+        font-family: 'Roboto', sans-serif;
+      }
+      h1{
+        margin: 0;
+        text-align: justify;
+        line-height: 1.5;
+      }
+      p{
+        margin: 0;
+        text-align: justify;
+        line-height: 1.5;
+      }
+
+      .container{
+        display: grid;
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        margin: 0;
+        grid-template-columns: 30% 70%;
+        grid-gap: 5px;
+        grid-template-areas: 'about about'
+                              'skills experience'
+                              'skills study'
+                              'footer footer';
+      }
+
+      .box{
+        background: #EAFAF1;
+        padding: 10px;
+      }
+
+/* Inicia Perfil */
+      .about{
+        grid-area: about;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 5px;
+        grid-template-areas: 'imgaboutme aboutme1'
+                              'imgaboutme aboutme2';
+      }
+      .imgaboutme{
+        grid-area: imgaboutme;
+        align-self: center;
+        justify-self: center;
+      }
+      .aboutme1{
+        grid-area: aboutme1;
+        text-align: justify;
+      }
+      .aboutme2{
+        grid-area: aboutme2;
+        text-align: justify;
+      }
+      .imgabout{
+        border-radius: 50%;
+      }
+/* Fin Perfil */
+
+/* Inicia Skills e Idiomas */
+      .skills{
+        grid-area: skills;
+        display: grid;
+      }
+/* Fin Skills e Idiomas */
+
+/* Inicio Experiencia Profesional */
+      .experience{
+        grid-area: experience;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 5px;
+        grid-template-areas: 'titlexperience titlexperience'
+                              'job1 job2'
+                              'job3 job4';
+      }
+      .titlexperience{
+        grid-area: titlexperience;
+      }
+      .job1{
+        grid-area: job1;
+      }
+      .job2{
+        grid-area: job2;
+      }
+      .job3{
+        grid-area: job3;
+      }
+      .job4{
+        grid-area: job4;
+      }
+/* Fin Experiencia Profesional */
+
+/* Inicio Estudios y Cursos */
+      .study{
+        grid-area: study;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 5px;
+        grid-template-areas: 'titlestudy titlestudy'
+                              'study1 study2'
+                              'study3 study4'
+                              'study5 study6';
+      }
+      .titlestudy{
+        grid-area: titlestudy;
+      }
+      .study1{
+        grid-area: study1;
+      }
+      .study2{
+        grid-area: study2;
+      }
+      .study3{
+        grid-area: study3;
+      }
+      .study4{
+        grid-area: study4;
+      }
+      .study5{
+        grid-area: study5;
+      }
+      .study6{
+        grid-area: study6;
+      }
+/* Fin Estudios y Cursos */
+
+      .footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+          font-family: 'Roboto', sans-serif;
+        }
+
+        .container{
+          display: grid;
+          height: 100vh;
+          grid-template-columns: 100%;
+          grid-gap: 5px;
+          grid-template-areas: 'about'
+                                'skills'
+                                'experience'
+                                'study'
+                                'footer';
+        }
+      }
+    </style>
   </head>
   <body>
+    <div class="container">
+      <div class="box about">
+        <div class="box imgaboutme">
+          <img src="img/images2.jpg" alt="Pic" width="180" height="180" class="imgabout">
+        </div>
+        <div class="box aboutme1">
+          <h1>About me</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="box aboutme2">
+          <h2>FAQ</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+        </div>
+      </div>
+      <div class="box skills">
+        <div class="box titleskills">
+          <h1>Skills</h1>
+        </div>
 
+<!-- Inicio Habilidades Duras -->
+        <div class="box skills1">
+          <h2>Habilidades Duras</h2>
+          <div class="box hardskill1">
+            <h3>Python</h3>
+            <div class="progress progress-striped">
+              <div class="progress-bar">
+              </div>
+            </div>
+          </div>
+          <div class="box hardskill2">
+            <h3>Python</h3>
+            <div class="progress progress-striped">
+              <div class="progress-bar">
+              </div>
+            </div>
+          </div>
+          <div class="box hardskill3">
+            <h3>Python</h3>
+            <div class="progress progress-striped">
+              <div class="progress-bar">
+              </div>
+            </div>
+          </div>
+          <div class="box hardskill4">
+            <h3>Python</h3>
+            <div class="progress progress-striped">
+              <div class="progress-bar">
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Fin Habilidades Duras -->
+
+<!-- Inicio Habilidades Blandas -->
+        <div class="box skills2">
+          <h2>Habilidades Blandas</h2>
+          <div class="box softskill1">
+            <h3>Comunicacion</h3>
+            <div class="progress progress-striped">
+              <div class="progress-bar">
+              </div>
+            </div>
+          </div>
+          <div class="box softskill2">
+            <h3>Comunicacion</h3>
+            <div class="progress progress-striped">
+              <div class="progress-bar">
+              </div>
+            </div>
+          </div>
+          <div class="box softskill3">
+            <h3>Comunicacion</h3>
+            <div class="progress progress-striped">
+              <div class="progress-bar">
+              </div>
+            </div>
+          </div>
+          <div class="box softskill4">
+            <h3>Comunicacion</h3>
+            <div class="progress progress-striped">
+              <div class="progress-bar">
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Fin Habilidades Blandas -->
+
+<!-- Inicio Idiomas -->
+        <h2>Idioma</h2>
+        <div class="box languageskill1">
+          <h3>Ingles</h3>
+          <div class="progress progress-striped">
+            <div class="progress-bar">
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Fin Idiomas -->
+      <div class="box experience">
+        <div class="box titlexperience">
+          <h1>Experiencia</h1>
+        </div>
+        <div class="box job1">
+          <h2>Riopaila Castilla</h2>
+          <h3>2015-2015</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <input type="button" value="Ir">
+        </div>
+        <div class="box job2">
+          <h2>Riopaila Castilla</h2>
+          <h3>2015-2015</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <input type="button" value="Ir">
+        </div>
+        <div class="box job3">
+          <h2>Riopaila Castilla</h2>
+          <h3>2015-2015</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <input type="button" value="Ir">
+        </div>
+        <div class="box job4">
+          <h2>Riopaila Castilla</h2>
+          <h3>2015-2015</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <input type="button" value="Ir">
+        </div>
+      </div>
+      <div class="box study">
+        <div class="box titlestudy">
+          <h1>Estudios y Cursos</h1>
+        </div>
+        <div class="box study1">
+          <h2>Master</h2>
+          <h3>2015-2015</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <img src="img/images2.jpg" alt="img" width="50" height="50" class="imgabout">
+        </div>
+        <div class="box study2">
+          <h2>Master</h2>
+          <h3>2015-2015</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <img src="img/images2.jpg" alt="img" width="50" height="50" class="imgabout">
+        </div>
+        <div class="box study3">
+          <h2>Master</h2>
+          <h3>2015-2015</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <img src="img/images2.jpg" alt="img" width="50" height="50" class="imgabout">
+        </div>
+        <div class="box study4">
+          <h2>Master</h2>
+          <h3>2015-2015</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <img src="img/images2.jpg" alt="img" width="50" height="50" class="imgabout">
+        </div>
+        <div class="box study5">
+          <h2>Master</h2>
+          <h3>2015-2015</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <img src="img/images2.jpg" alt="img" width="50" height="50" class="imgabout">
+        </div>
+        <div class="box study6">
+          <h2>Master</h2>
+          <h3>2015-2015</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <img src="img/images2.jpg" alt="img" width="50" height="50" class="imgabout">
+        </div>
+      </div>
+      <div class="box footer">
+        <img src="img/iconmonstr-email-10-240.png" alt="Mail" width="50" height="50">
+        <img src="img/iconmonstr-github-1-240.png" alt="GitHub" width="50" height="50">
+        <img src="img/iconmonstr-linkedin-4-240.png" alt="linkedin" width="50" height="50">
+        <img src="img/iconmonstr-twitter-4-240.png" alt="Twitter" width="50" height="50">
+      </div>
+    </div>
   </body>
 </html>
