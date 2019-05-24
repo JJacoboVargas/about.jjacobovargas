@@ -114,6 +114,18 @@
       .imgabout{
         border-radius: 50%;
         border: #29beaa 2px solid;
+        animation: rotation 5s 1 linear;
+      }
+      @keyframes rotation {
+        0%{
+          transform: rotate(0deg);
+        }
+        50%{
+          transform: rotate(-12deg);
+        }
+        100%{
+          transform: rotate(0deg);
+        }
       }
 /* Fin Perfil */
 
@@ -220,6 +232,10 @@
           font-family: 'Roboto', sans-serif;
           margin: 0px;
         }
+        h3{
+          color: #2ECF99;
+          /* border-bottom: #2ECF99 2px solid; */
+        }
 
         .container{
           display: grid;
@@ -266,7 +282,7 @@
           <img src="img/profile.jpeg" alt="Pic" width="200" height="200" class="imgabout">
         </div>
         <div class="box aboutme1">
-          <h1>About me, Jacobo</h1>
+          <h1>About me</h1>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;Currently <a href="#idstudy"><span style="color:#29BEAA;">studying</span></a>  Information Management, graduate of Finance and Industrial Ingineer. Knowledge applied in SQL databases (MySQL and PostgreSQL), creation of data visualization with Tableau. Professional <a href="#idexperience"><span style="color:#29BEAA;">experience</span></a> in training projects, standardization of processes in software implementation (ERP) and participation in interdisciplinary teams of continuous improvement through a SCRUM framework. <a href="#idfooter"><span style="color:#29BEAA;">Looking</span></a> for companies or social projects to create value through data analysis, implementation of software projects and financial evaluation of them. In courses of BigData and Qlik.</p>
         </div>
         <div class="box aboutme2">
@@ -276,7 +292,7 @@
           </div>
           <h3>Why did you study Industrial Engineering, Finance and Information Management?</h3>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;The processes are made by activities. All the activities of a company or a Startup have a cost or income that could be evaluated. Everything I have written (activities, costs, income) are data that can be converted into information to communicate or create something new.</p>
-          <button type="button" class="myButton">Download PDF</button>
+          <a href="doc/jjacobovargas.pdf" target="_blank"><button type="button" class="myButton">Download PDF</button></a>
         </div>
       </div>
 
